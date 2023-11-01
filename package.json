@@ -1,5 +1,14 @@
 {
+  "homepage": "https://Elgraabi.github.io/Elgraabi.github.io",
   "devDependencies": {
     "gh-pages": "^6.0.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint src --ext js,jsx --report-unused-disable-directiver --max-warnings 0",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   }
 }
