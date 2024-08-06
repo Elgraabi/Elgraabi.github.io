@@ -1,73 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Definição do conjunto de caracteres do documento -->
     <meta charset="UTF-8">
+    <!-- Configuração da viewport para garantir responsividade -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página -->
     <title>Portfólio Gabriel Oliveira</title>
-    <!-- Google Fonts -->
+    <!-- Conexão prévia com o Google Fonts para carregar fontes mais rápido -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Link para importar a fonte 'Roboto' do Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;0,900;1,300;1,700&display=swap" rel="stylesheet">
-    <!-- Dev Icon Fonts -->
+    <!-- Link para importar ícones do Dev Icon Fonts -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <!-- CSS do Projeto -->
+    <!-- Link para importar o arquivo CSS do projeto -->
     <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
+    <!-- Elemento principal do conteúdo -->
     <main id="container">
+        <!-- Seção lateral do bio -->
         <aside id="bio-container">
+            <!-- Nome do Gabriel Oliveira -->
             <h2>Gabriel Oliveira</h2>
+            <!-- Imagem de perfil do Gabriel Oliveira -->
             <img id="bio-image" src="img/1691067837321.jpg" alt="Gabriel Oliveira">
+            <!-- Texto de apresentação -->
             <p>👋 Olá, sou Gabriel Oliveira e quero ser <span class="highlight">Desenvolvedor FullStack</span>.</p>
+            <!-- Mensagem de boas-vindas -->
             <p id="welcome-txt">Seja bem-vindo!</p>
+            <!-- Links para redes sociais -->
             <ul id="social-container">
+                <!-- Link para o Facebook -->
                 <li><a href="https://www.facebook.com/profile.php?id=100013728790811" target="_blank"><ion-icon name = "logo-facebook"></ion-icon></a></li>
+                <!-- Link para o LinkedIn -->
                 <li><a href="https://www.linkedin.com/in/gabriel-oliveira-5608051b3/" target="_blank"><ion-icon name = "logo-linkedin"></ion-icon></a></li>
+                <!-- Link para o Instagram -->
                 <li><a href="https://www.instagram.com/gabriellsilvolive/" target="_blank"><ion-icon name = "logo-instagram"></ion-icon></a></li>
             </ul>
+            <!-- Container para o e-mail -->
             <di id="email-container">
-                <ion-icon name = "mail-outline"></ion-icon><a href="mailto:silvatdb8@gmail.com">silvatdb8@gmail.com</a>
+                <!-- Ícone de e-mail -->
+                <ion-icon name = "mail-outline"></ion-icon>
+                <!-- Link para enviar e-mail -->
+                <a href="mailto:silvatdb8@gmail.com">silvatdb8@gmail.com</a>
             </di>
         </aside>
+        <!-- Seção sobre Gabriel Oliveira -->
         <section id="about-container">
+            <!-- Nome em destaque -->
             <h1 id="name">Gabriel Oliveira</h1>
-            <p id="title"><span class="highligh">Desenvolvedor FullStack</span></p>
+            <!-- Título da profissão -->
+            <p id="title"><span class="highlight">Desenvolvedor FullStack</span></p>
+            <!-- Descrição com interesse em tecnologia e aprendizado -->
             <p class="description"><span class="highlight">Tenho interesse em tecnologia e desenvolvimento de software</span>. 🌱 Atualmente estou <span class="highlight">aprendendo novas linguagens de programação</span> e aprimorando minhas habilidades de codificação. 💞 Estou buscando <span class="highlight">colaborar em projetos de código aberto e soluções de software inovadoras</span>.</p>
+            <!-- Descrição adicional sobre atuação no front e back-end -->
             <p class="description">Atuo tanto no <span class="highlight">front</span> como no <span class="highlight">back-end</span>, e amo tecnologia, estudo todos os dias para me tornar cada vez melhor e escrever código de qualidade.</p>
+            <!-- Botão para ver projetos no GitHub -->
             <a href="https://github.com/Elgraabi?tab=repositories" id="btn-projects"><ion-icon name="share-social-outline"></ion-icon>Ver Projetos</a>
+            <!-- Título da seção de skills -->
             <h2 id="skills-section-title">Minhas Skills</h2>
+            <!-- Descrição das skills -->
             <p class="description">Conheça as tecnologias que domino:</p>
+            <!-- Container das skills -->
             <div id="skills-container">
+                <!-- Skill de Front-end -->
                 <div class="skills-box">
                     <p class="skills-title">Front-end</p>
+                    <!-- Link para HTML -->
                     <a href="https://www.w3schools.com/html/" target="_blank"><i class="devicon-html5-plain colored"></i></a>
+                    <!-- Link para CSS -->
                     <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank"><i class="devicon-css3-plain colored"></i></a>
+                    <!-- Link para JavaScript -->
                     <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank"><i class="devicon-javascript-plain colored"></i></a>
                 </div>
+                <!-- Skill de Back-end -->
                 <div class="skills-box">
                     <p class="skills-title">Back-end</p>
+                    <!-- Link para Java -->
                     <a href="https://docs.oracle.com/en/java/" target="_blank"><i class="devicon-java-plain colored"></i></a>
+                    <!-- Link para Python -->
                     <a href="https://docs.python.org/3/" target="_blank"><i class="devicon-python-plain colored"></i></a>
                 </div>
+                <!-- Skill de Bancos de Dados -->
                 <div class="skills-box">
                     <p class="skills-title">Databases</p>
+                    <!-- Link para MySQL -->
                     <a href="https://www.mysql.com/" target="_blank"><i class="devicon-mysql-plain colored"></i></a>
                 </div>
+                <!-- Skill de Frameworks Front-end -->
                 <div class="skills-box">
                     <p class="skills-title">Front-end Frameworks</p>
+                    <!-- Link para React -->
                     <a href="https://react.dev/learn" target="_blank"><i class="devicon-react-plain colored"></i></a>
                 </div>
+                <!-- Skill de Frameworks Back-end -->
                 <div class="skills-box">
                     <p class="skills-title">Back-end Frameworks</p>
+                    <!-- Link para Spring Boot -->
                     <a href="https://spring.io/projects/spring-boot" target="_blank"><i class="devicon-spring-plain colored"></i></a>
                 </div>
+                <!-- Skill de Ferramentas -->
                 <div class="skills-box">
                     <p class="skills-title">Tools</p>
                 </div>
             </div>
         </section>
     </main>
-    <!-- Io Icons -->
+    <!-- Scripts para importar ícones -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
