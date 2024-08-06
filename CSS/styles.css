@@ -1,4 +1,4 @@
-/* Reset */
+/* Reset de Estilos: Remove padding e margem de todos os elementos, define a fonte padrão como 'Roboto' e ajusta o box-sizing para border-box */
 * {
     padding: 0;
     margin: 0;
@@ -6,8 +6,7 @@
     box-sizing: border-box;
 }
 
-/* Variables */
-
+/* Definição de Variáveis CSS: Facilita a manutenção e alterações futuras */
 :root {
     --main-color: #54B689;
     --main-text-color: #FFF;
@@ -17,228 +16,223 @@
     --about-bg-color: #111821;
 }
 
-/* Gerenal */
-
+/* Estilo Geral: Define a cor principal para a classe highlight */
 .highlight {
     color: var(--main-color);
 }
 
-/* Conteiners */
-
+/* Estilos dos Containers Principais */
 #container {
-    display: flex;
-    flex-direction: row;
-    color: var(--main-text-color);
+    display: flex; /* Usa Flexbox para o layout */
+    flex-direction: row; /* Direção dos itens do flex */
+    color: var(--main-text-color); /* Cor do texto */
 }
 
 #bio-container {
-    flex: 1 1 20%;
-    min-height: 100vh;
-    background-color: var(--bio-bg-color);
-    text-align: center;
-    padding:  30px 12px;
-    border-right: 5px solid var(--bio-border-color);
+    flex: 1 1 20%; /* Flexibilidade e largura do container */
+    min-height: 100vh; /* Altura mínima */
+    background-color: var(--bio-bg-color); /* Cor de fundo */
+    text-align: center; /* Alinhamento do texto */
+    padding: 30px 12px; /* Espaçamento interno */
+    border-right: 5px solid var(--bio-border-color); /* Borda direita */
 }
 
 #about-container {
-    flex: 1 1 80%;
-    min-height: 100vh; 
-    background-color: var(--about-bg-color);
-    padding: 50px;
+    flex: 1 1 80%; /* Flexibilidade e largura do container */
+    min-height: 100vh; /* Altura mínima */
+    background-color: var(--about-bg-color); /* Cor de fundo */
+    padding: 50px; /* Espaçamento interno */
 }
 
 #bio-container img {
-    width:  150px;
+    width: 150px; /* Largura da imagem */
 }
 
-/* Bio container */
-
+/* Estilos do Bio Container */
 #bio-container h2 {
-    margin-bottom: 25px;
+    margin-bottom: 25px; /* Margem inferior */
 }
 
 #bio-container p {
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Margem inferior */
 }
 
 #bio-container #welcome-txt {
-    font-weight: bold;
+    font-weight: bold; /* Negrito */
 }
 
 #bio-image {
-    width: 175px;
-    height: 175px;
-    border-radius: 50%;
-    margin-bottom: 25px;
+    width: 175px; /* Largura da imagem */
+    height: 175px; /* Altura da imagem */
+    border-radius: 50%; /* Arredonda a imagem */
+    margin-bottom: 25px; /* Margem inferior */
 }
 
 #social-container {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    border-bottom: 1px solid var(--border-color);
-    margin-bottom: 25px;
-    padding-bottom: 25px;
+    display: flex; /* Usa Flexbox */
+    justify-content: center; /* Alinha ao centro */
+    list-style: none; /* Remove estilo de lista */
+    border-bottom: 1px solid var(--border-color); /* Borda inferior */
+    margin-bottom: 25px; /* Margem inferior */
+    padding-bottom: 25px; /* Espaçamento interno inferior */
 }
 
 #social-container li {
-    flex: 1 1 0;
-    max-width:  60px;
+    flex: 1 1 0; /* Flexibilidade dos itens */
+    max-width: 60px; /* Largura máxima dos itens */
 }
 
 #social-container li a {
-    color: var(--main-color);
-    font-size: 30px;
+    color: var(--main-color); /* Cor do texto */
+    font-size: 30px; /* Tamanho da fonte */
 }
 
 #email-container {
-    display: flex;
-    justify-content: center;
+    display: flex; /* Usa Flexbox */
+    justify-content: center; /* Alinha ao centro */
 }
 
 #email-container ion-icon,
 #email-container a {
-    flex: 1 1 0;
+    flex: 1 1 0; /* Flexibilidade dos itens */
 }
 
 #email-container a {
-    color: var(--main-text-color);
-    text-decoration: none;
-    max-width: 225px;
+    color: var(--main-text-color); /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado */
+    max-width: 225px; /* Largura máxima */
 }
 
 #email-container ion-icon {
-    color: var(--main-color);
-    font-size: 20px;
-    margin-right: 5px;
-    max-width: 20px;
+    color: var(--main-color); /* Cor do ícone */
+    font-size: 20px; /* Tamanho da fonte */
+    margin-right: 5px; /* Margem direita */
+    max-width: 20px; /* Largura máxima */
 }
 
-/* about container */
-
+/* Estilos do About Container */
 #name {
-    font-size: 42px;
-    margin-bottom: 15px;
+    font-size: 42px; /* Tamanho da fonte */
+    margin-bottom: 15px; /* Margem inferior */
 }
 
 #title {
-    font-size: 24px;
-    margin-bottom: 15px;
-    font-weight: bold;
+    font-size: 24px; /* Tamanho da fonte */
+    margin-bottom: 15px; /* Margem inferior */
+    font-weight: bold; /* Negrito */
 }
 
 .description {
-    max-width: 75%;
-    margin-bottom: 10px;
+    max-width: 75%; /* Largura máxima */
+    margin-bottom: 10px; /* Margem inferior */
 }
 
 #btn-projects {
-    font-weight: bold;
-    font-size: 16px;
-    color: var(--main-text-color);
-    background-color: var(--main-color);
-    border: 2px solid var(--main-color);
-    border-radius: 5px;
-    text-decoration: none;
-    transition: .5s;
-    margin: 25px 0;
-    padding: 12px 10px;
-    width: 150px;
-    text-align: center;
-    display: flex;
+    font-weight: bold; /* Negrito */
+    font-size: 16px; /* Tamanho da fonte */
+    color: var(--main-text-color); /* Cor do texto */
+    background-color: var(--main-color); /* Cor de fundo */
+    border: 2px solid var(--main-color); /* Borda */
+    border-radius: 5px; /* Arredonda os cantos */
+    text-decoration: none; /* Remove sublinhado */
+    transition: .5s; /* Transição suave */
+    margin: 25px 0; /* Margem */
+    padding: 12px 10px; /* Espaçamento interno */
+    width: 150px; /* Largura */
+    text-align: center; /* Alinha o texto ao centro */
+    display: flex; /* Usa Flexbox */
 }
 
 #btn-projects ion-icon, 
 #btn-projects span {
-    flex: 1 1 0;
+    flex: 1 1 0; /* Flexibilidade dos itens */
 }
 
 #btn-projects ion-icon {
-    font-size: 20px;
-    max-width: 20px;
+    font-size: 20px; /* Tamanho da fonte */
+    max-width: 20px; /* Largura máxima */
 }
 
 #btn-projects:hover {
-    background-color: transparent;
+    background-color: transparent; /* Cor de fundo transparente ao passar o mouse */
 }
 
 #skills-section-title {
-    border-top: 1px solid var(--border-color);
-    padding-top: 20px;
-    margin-bottom: 20px;
-    font-size: 32px;
+    border-top: 1px solid var(--border-color); /* Borda superior */
+    padding-top: 20px; /* Espaçamento interno superior */
+    margin-bottom: 20px; /* Margem inferior */
+    font-size: 32px; /* Tamanho da fonte */
 }
 
 #skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 25px;
+    display: flex; /* Usa Flexbox */
+    flex-wrap: wrap; /* Permite quebra de linha */
+    margin-top: 25px; /* Margem superior */
 }
 
 .skills-box {
-    flex: 1 1 33%;
-    max-width: 33%;
-    margin-bottom: 35px;
+    flex: 1 1 33%; /* Flexibilidade dos itens */
+    max-width: 33%; /* Largura máxima */
+    margin-bottom: 35px; /* Margem inferior */
 }
 
 .skills-title {
-    font-size: 24px;
-    margin-bottom: 25px;
-    font-weight: bold;
-    padding-left: 10px;
-    border-left: 5px solid var(--main-color);
+    font-size: 24px; /* Tamanho da fonte */
+    margin-bottom: 25px; /* Margem inferior */
+    font-weight: bold; /* Negrito */
+    padding-left: 10px; /* Espaçamento interno à esquerda */
+    border-left: 5px solid var(--main-color); /* Borda esquerda */
 }
 
 .skills-box i {
-    font-size: 45px;
-    margin-right: 10px;
+    font-size: 45px; /* Tamanho da fonte */
+    margin-right: 10px; /* Margem direita */
 }
 
-/* Mobile */
-
+/* Estilos Responsivos para Dispositivos Móveis */
 @media(max-width: 450px) {
     #container {
-        flex-direction: column;
+        flex-direction: column; /* Direção dos itens do flex em coluna */
     }
 
     #bio-container {
-        min-height: auto;
-        border-right: none;
-        border-bottom: 5px solid var(--bio-border-color);
+        min-height: auto; /* Altura mínima automática */
+        border-right: none; /* Remove borda direita */
+        border-bottom: 5px solid var(--bio-border-color); /* Adiciona borda inferior */
     }
 
     #bio-container h2 {
-        display: none;
+        display: none; /* Esconde o título */
     }
 
     #bio-container p {
-        max-width: 60%;
-        margin: 10px auto;
+        max-width: 60%; /* Largura máxima */
+        margin: 10px auto; /* Margem automática */
     }
 
     #about-container {
-        text-align: center;
-        padding: 30px;
+        text-align: center; /* Alinha o texto ao centro */
+        padding: 30px; /* Espaçamento interno */
     }
 
     #about-container .description {
-        margin: 10px auto;
-        max-width: 100%;
-        line-height: 26px;
+        margin: 10px auto; /* Margem automática */
+        max-width: 100%; /* Largura máxima */
+        line-height: 26px; /* Altura da linha */
     }
 
     #btn-projects {
-        margin: 20px auto;
+        margin: 20px auto; /* Margem automática */
     }
 
-    .skills-box{
-        flex: 1 1 100%;
-        max-width: 100%;
-        margin-bottom: 40px;
-        text-align: left;
+    .skills-box {
+        flex: 1 1 100%; /* Flexibilidade dos itens */
+        max-width: 100%; /* Largura máxima */
+        margin-bottom: 40px; /* Margem inferior */
+        text-align: left; /* Alinha o texto à esquerda */
     }
 
     .skills-box i {
-        font-size: 60px;
+        font-size: 60px; /* Tamanho da fonte */
     }
 }
